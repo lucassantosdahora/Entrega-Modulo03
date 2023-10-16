@@ -1,0 +1,31 @@
+@import url(/css/styles.css);
+
+.bd-navbar{
+ background-image: var(--gradient-green);
+}
+#color{
+ color: var(--color-light);
+ font-family: var(--font-default);
+ font-size: var(--font-size-default);
+ background-color: rgba(255, 248, 220, 0);
+ transition: 0.5s;
+ font-size: 1.2rem;
+}
+#color:hover{
+ color: var(     --color-dark);
+ font-size: 1.0rem;
+ transition: 0.5s;
+}
+.btn-primary{
+  background-color:var( --color-other); 
+}
+/*RESPOSIVIDADE*/
+@media screen and (min-width:200px) and (max-width:700px) {
+  #logo{
+    margin-left: 2rem;
+    padding: 2rem;
+  }
+  .carousel{
+    width: 113%;
+  }
+}

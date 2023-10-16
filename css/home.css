@@ -1,0 +1,436 @@
+@import url(/css/styles.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--font-default);
+
+}
+
+#caixa-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#caixa-nav img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 2rem;
+}
+
+body {
+  font-family: var(--font-default);
+  background-color: rgb(245, 203, 147);
+  background-image: url(/assets/background/backgraud.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  margin: 40rem;
+}
+
+.titulo-h {
+  margin-top: 2rem;
+  width: 100%;
+  height: 30vh;
+  color: var(--color-light);
+  font-family: var(--font-default);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: var(--gradient-green);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* VIANGENS MAIS PROCURADAS */
+.destaques {
+  margin-top: 2rem;
+  background-image: var(--gradient-other);
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.viagens-cards {
+  width: 100%;
+  height: 50vh;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.imagem{
+  max-width: 100%;
+  height: auto;
+}
+
+.card-v {
+  background-color: rgb(228, 228, 228);
+  margin-top: 20px;
+  width: 100%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+  padding-bottom: 20px;
+  transition: 0.3s;
+  transform: scale(0.9);
+}
+
+.card-dastaques {
+  margin-top: 20px;
+  width: 100%;
+  height: 48vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.card-v:hover {
+  -ms-transform: scale(0.9);
+  transform: scale(0.7);
+  transition: 0.3;
+  transform: scale(1.0);
+  border-color: var(--color-other);
+  border-style: solid;
+  border-left: 40rem;
+}
+
+.body-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 125px;
+  transition: 0.9s;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: var(--color-other);
+  font-size: var(--font-size-default);
+}
+
+.valor {
+  color: antiquewhite;
+  background-color: var(--color-other);
+  width: 80%;
+  height: 57px;
+  padding-top: 10px;
+  padding-left: 7px;
+  border-radius: 3px;
+}
+
+/* SOBRE A AGÊNCIA */
+.contentor {
+  width: 100%;
+  height: 120vh;
+  margin-top: 4rem;
+  padding-left: 4rem;
+  padding-right: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: var(--gradient-other);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.imagem-descricao {
+  display: flex;
+  width: 55%;
+  height: 90vh;
+}
+
+#imgtext-1 {
+  background-image: url(/assets/home/viagemsemlegenda.jpg);
+  display: flex;
+  width: 50%;
+  background-size: cover; /* Faz a imagem de fundo cobrir o container */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-position: center; /* Centraliza a imagem de fundo no container */
+}
+
+#imgtext-2 {
+  background-image: url(/assets/home/sonhos.png);
+  width: 50%;
+  background-size: cover; /* Faz a imagem de fundo cobrir o container */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-position: center; /* Centraliza a imagem de fundo no container */
+}
+
+.text {
+  background-color: var(--color-other);
+  color: var(--color-light);
+  width: 50%;
+  height: 90vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-default);
+  font-family: var(--font-default);
+}
+
+.text h2 {
+  font-size: var(--font-size-special);
+  color: var(--color-light);
+  background-image: var(--gradient-green);
+  width: 100%;
+}
+
+/* PACOTES*/
+.pacotes {
+  margin-top: 2rem;
+  background-image: var(--gradient-other);
+  width: 100%;
+  height: 150vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.pacote {
+  width: 40%;
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pacote-cards {
+  width: 100%;
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.pacote-box {
+  width: 130%;
+  height: 500px;
+  position: relative;
+  border: 2px solid var(--color-other);
+  overflow: hidden;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.imagem-p:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.imagem-p {
+  height: 45vh;
+  background-size: cover;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  color: var(--color-light);
+}
+
+.imagem-p h3 {
+  background-image: var(--gradient-green);
+}
+
+.destricao-pacote {
+  background-image: var(--gradient-green);
+}
+
+#img-1 {
+  background-image: url(/assets/img-pacotes/disney.jpg);
+  width: auto;
+}
+
+#img-2 {
+  background-image: url(/assets/img-pacotes/fervedouro-no-jalapao.jpg);
+  width: auto;
+}
+
+#img-3 {
+  background-image: url(/assets/img-pacotes/fernando-de-noronha.jpg);
+  width: auto;
+}
+
+.gif-aprestacao {
+  background-image: url(/assets/home/video.propagnda.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  margin-left: 10rem;
+  margin-right: 2rem;
+}
+
+/*RESPOSIVIDADE*/
+
+@media screen and (min-width:200px) and (max-width:700px) {
+  body {
+    height: 130rem;
+    background-size: 5000%;
+    padding-left: 1rem;
+  }
+
+  main {
+    height: 130rem;
+  }
+
+  .contentor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #titulo-c {
+    padding: 1rem;
+    font-size: larger;
+  }
+
+  #imgtext-1 {
+    width: 200%;
+    margin-left: 2rem;
+  }
+
+  #imgtext-2 {
+    width: 200%;
+    margin-left: 2rem;
+  }
+
+  .text {
+    width: 200%;
+    margin-left: 2rem;
+  }
+
+  .destaques {
+    height: 120%;
+
+  }
+
+  .viagens-cards {
+    margin-top: 30rem;
+    margin-bottom: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-v {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-dastaques {
+    width: 100%;
+    height: auto;
+  }
+
+  .valor {
+    width: 100%;
+    position: var(card-dastaques);
+  }
+
+  .titulo-h {
+    padding: 0;
+    padding-left: 1rem;
+  }
+
+  .pacotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    margin: 0;
+    padding: 0;
+    padding-right: 6rem;
+    margin-top: 2rem;
+  }
+
+  .pacote-cards {
+    width: 200%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    margin-right: 2rem;
+    font-size: var(--font-size-small);
+  }
+
+  .imagem-p {
+    padding: 2rem;
+  }
+
+  .gif-aprestacao {
+    padding: 0;
+    margin: 0;
+    margin-left: 6rem;
+    margin-top: 2rem;
+    width: 120%;
+    height: 20%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .viagens-cards {
+    margin-top: 30rem;
+    margin-bottom: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-v {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    height: 130%;
+  }
+
+  .text p {
+    font-size: small;
+    padding: 0;
+  }
+
+  #titulo-c {
+    padding: 0;
+    width: 100%;
+  }
+
+  .gif-aprestacao {
+    width: 60%;
+    height: 30%;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1919px) {
+  .card-v {
+    margin-top: 1rem;
+    width: 30%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width:1400px) {
+  .card-v {
+    margin-top: 1rem;
+    width: 20%;
+    height: 100%;
+  }
+}

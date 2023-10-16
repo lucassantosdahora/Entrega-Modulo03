@@ -1,0 +1,28 @@
+@import url(/css/styles.css);
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font-defaul);
+    font-size: var(--font-size-default);
+    background-image: var( --gradient-green);
+    color:var(--color-light);
+    height:30vh;
+    padding: 20px;
+    margin-top: 40vh;
+}
+
+.gif{
+    text-align: center;
+    padding: 15px;
+}
+/*RESPOSIVIDADE*/
+@media screen and (min-width:200px) and (max-width:700px) {
+    footer{
+        margin: 0;
+        margin-top: 720vh;
+        width:110%;
+        font-size:xx-small;
+    }
+}
+

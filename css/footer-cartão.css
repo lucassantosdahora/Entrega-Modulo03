@@ -1,0 +1,30 @@
+footer{
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font-defaul);
+    font-size: var(--font-size-default);
+    background-image: var( --gradient-green);
+    color:var(--color-light);
+    height:40vh;
+    width: 100%;
+    padding: 20px;
+    margin-top: 40vh;
+}
+
+.cartoes{
+    display: flex;
+    height: 80px;
+    width: 50%;
+}
+/*RESPOSIVIDADE*/
+/* @media screen and (min-width:200px) and (max-width:991px) {
+    footer{
+        margin: 0;
+        margin-top: 630vh;
+        width:110%;
+        font-size:xx-small;
+    }
+}
+ */
