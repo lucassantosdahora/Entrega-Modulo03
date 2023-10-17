@@ -25,7 +25,7 @@ A pasta modelagem de dados contém os prints de modelo conceitual e lógico, tam
 Operações CRUD em Java
 A pasta java contém o código Java para operações CRUD.
 O código utiliza JDBC para se conectar ao banco de dados e realizar as seguintes operações:
-Create: Inserir novos destinos ou pacotes turísticos.
-Read: Consultar informações sobre destinos e pacotes turísticos.
-Update: Atualizar detalhes de destinos ou pacotes turísticos.
+Create: Inserir novos clientes, destinos promoção e reserva.
+Read: Consultar informações sobre clientes, destinos promoção e reserva.
+Update: Atualizar detalhes de destinos e a demais tabelas.
 Delete: Remover registros do banco de dados.
