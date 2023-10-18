@@ -345,30 +345,23 @@ public class Main {
 				System.out.print("ID da reserva para atualização: ");
 				int reservaId = scanner.nextInt();
 				Reservas reservaAtualizar = reservasDAO.buscarReservas(reservaId);
-
 				if (reservaAtualizar != null) {
 					System.out.print("ID do Cliente: ");
 					int clienteIdAtualizar = scanner.nextInt();
 					Clientes reservaClienteAtualizar = clientesDAO.buscarClientes(clienteIdAtualizar);
-
 					if (reservaClienteAtualizar != null) {
 						reservaAtualizar.setClientes(reservaClienteAtualizar);
-
 						System.out.print("ID do destino: ");
 						int destinoId = scanner.nextInt();
 						Destinos reservaDestino = destinosDAO.buscarDestinos(destinoId);
-
 						if (reservaDestino != null) {
 							reservaAtualizar.setDestinos(reservaDestino);
-
 							// Solicitar o valor total a pagar
 							System.out.println("Informe valor total a pagar:");
 							int valorTotal = scanner.nextInt();
 							reservaAtualizar.setValor(valorTotal);
-
 							System.out.print("Data da reserva (dd/mm/yyyy): ");
 							String dataReserva = scanner.next();
-
 							try {
 								// Converter a data fornecida em um objeto java.sql.Date
 								SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
